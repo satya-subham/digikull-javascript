@@ -8,15 +8,15 @@
 // let result = str.toLowerCase()
 // let result = str.split('-');
 
-// let str = "Today is a beautiful day. Let us enjoy today and not worry about tomorrow! Today will not repeat itself";
+let str = "Today is a beautiful day. Let us enjoy today and not worry about tomorrow! Today will not repeat itself";
 
-// let result = str.split(" ");
+let result = str.split(" ");
 
-// for(let i=0; i<result.length; i++){
-//     if(result[i].includes("Today")){
-//         console.log(i)
-//     }
-// }
+for(let i=0; i<result.length; i++){
+    if(result[i] == 'Today'){
+        console.log(i)
+    }
+}
 
 
 // let str = "satya";
@@ -63,16 +63,16 @@
 // console.log(min, max);
 
 
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-let target = 9;
-let present = false;
-for(let i = 0; i < arr.length; i++) {
-    if(arr[i] === target) {
-     present=true;
-    }
-}
-if(present) {
-    console.log(true);
-}else{
-    console.log(false);
-}
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let target = 9;
+// let present = false;
+// for(let i = 0; i < arr.length; i++) {
+//     if(arr[i] === target) {
+//      present=true;
+//     }
+// }
+// if(present) {
+//     console.log(true);
+// }else{
+//     console.log(false);
+// }
