@@ -49,15 +49,30 @@
 // console.log(arr);
 
 
-let arr = [1, 2, 3, 4, 5, 6, 7, -1];
-let min = arr[0];
-let max = arr[0];
+// let arr = [1, 2, 3, 4, 5, 6, 7, -1];
+// let min = arr[0];
+// let max = arr[0];
+// for(let i = 0; i < arr.length; i++) {
+//   if(arr[i] < min) {
+//     min = arr[i];
+//   }
+//   if(arr[i] > max) {
+//     max = arr[i];
+//   }
+// }
+// console.log(min, max);
+
+
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let target = 9;
+let present = false;
 for(let i = 0; i < arr.length; i++) {
-  if(arr[i] < min) {
-    min = arr[i];
-  }
-  if(arr[i] > max) {
-    max = arr[i];
-  }
+    if(arr[i] === target) {
+     present=true;
+    }
 }
-console.log(min, max);
+if(present) {
+    console.log(true);
+}else{
+    console.log(false);
+}
