@@ -85,8 +85,18 @@
 // console.log(reverse(123));
 
 
-function getSum(first, last){
-    if(first == last) return first / last;
-    return first + getSum(first+1, last);
+// function getSumInRange(first, last){
+//     if(first == last) return first / last;
+//     return first + getSumInRange(first+1, last);
+// }
+// console.log(getSumInRange(5, 20));
+
+
+
+function getNumberInRange(start, end){
+  if(end - start === 2) return [start+1];
+  let res = getNumberInRange(start, end - 1);
+  res.push(end - 1);
+  return res;
 }
-console.log(getSum(5, 20));
+console.log(getNumberInRange(5, 20));
