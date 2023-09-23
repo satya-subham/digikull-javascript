@@ -43,14 +43,11 @@
 
 
 // RECURSION 
-// function factorial(n) {
-//     let fac = 1;
-//    for(let i = 1; i <= n; i++){
-//      fac *= i
-//    }
-//    return fac;
-// }
-// console.log(factorial(5));
+function factorial(n) {
+    if(n == 0) return 1 
+   return n * factorial(n-1);
+}
+console.log(factorial(6));
 
 
 // let a = 0, b = 1;
@@ -81,10 +78,10 @@
 
 
 
-function reverse(num) {
- if(num < 10) return num;
+// function reverse(num) {
+//  if(num < 10) return num;
 
- return num%10 + "" + reverse(Math.floor(num/10));
+//  return num%10 + "" + reverse(Math.floor(num/10));
 
-}
-console.log(reverse(123));
+// }
+// console.log(reverse(123));
