@@ -43,11 +43,11 @@
 
 
 // RECURSION 
-function factorial(n) {
-    if(n == 0) return 1 
-   return n * factorial(n-1);
-}
-console.log(factorial(6));
+// function factorial(n) {
+//     if(n == 0) return 1 
+//    return n * factorial(n-1);
+// }
+// console.log(factorial(6));
 
 
 // let a = 0, b = 1;
@@ -76,8 +76,6 @@ console.log(factorial(6));
 
 
 
-
-
 // function reverse(num) {
 //  if(num < 10) return num;
 
@@ -85,3 +83,10 @@ console.log(factorial(6));
 
 // }
 // console.log(reverse(123));
+
+
+function getSum(first, last){
+    if(first == last) return first / last;
+    return first + getSum(first+1, last);
+}
+console.log(getSum(5, 20));
