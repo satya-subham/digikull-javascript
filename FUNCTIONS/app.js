@@ -93,10 +93,19 @@
 
 
 
-function getNumberInRange(start, end){
-  if(end - start === 2) return [start+1];
-  let res = getNumberInRange(start, end - 1);
-  res.push(end - 1);
-  return res;
+// function getNumberInRange(start, end){
+//   if(end - start === 2) return [start+1];
+//   let res = getNumberInRange(start, end - 1);
+//   res.push(end - 1);
+//   return res;
+// }
+// console.log(getNumberInRange(5, 20));
+
+
+function swap(a, b) {
+  a = a+b;
+  b = a-b;
+  a = a-b;
+  console.log(a, b);
 }
-console.log(getNumberInRange(5, 20));
+swap(1, 2);
