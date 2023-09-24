@@ -14,7 +14,13 @@
     <h1> I am a new heading</h1>
 </body>
 <script>
-    const element = document.getElementById("unique");
-    console.log(element.parentElement.childNodes);
+    let body = document.querySelector('body');
+    let newDiv = document.createElement('div');
+    newDiv.innerHTML = `
+    <p>new div para 1</p>
+    <p>new div para 2</p>
+    `
+    newDiv.id = "new-div";
+    body.append(newDiv);
 </script>
 </html>
