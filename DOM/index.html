@@ -4,23 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div>
-        <p class="first" id="unique">I am one more paragraph</p>
-        <p>I am paragraph</p>
-        <pre> I am a pre</pre>
+        <h1>I am a heading!</h1>
+        <h2>I am an h2 heading!</h2>
+        <h2>I am another h2 heading!</h2>
     </div>
-    <h1> I am a new heading</h1>
+
+
+
+
+    <script>
+
+        const parent = document.getElementsByTagName('h1')[0];
+        const newPara = document.createElement('p');
+        newPara.innerText = "new Para";
+        // parent.before(newPara);
+        parent.after(newPara);
+        // console.log(child);
+        // while(parent.firstChild){
+        //     parent.removeChild(parent.firstChild);
+        // }
+        // parent.innerHTML = " ";
+    </script>
+
 </body>
-<script>
-    let body = document.querySelector('body');
-    let newDiv = document.createElement('div');
-    newDiv.innerHTML = `
-    <p>new div para 1</p>
-    <p>new div para 2</p>
-    `
-    newDiv.id = "new-div";
-    body.append(newDiv);
-</script>
+
 </html>
