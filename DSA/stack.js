@@ -13,6 +13,9 @@ class Stack {
     this.stack.pop();
     return poppedElement;
   }
+  length(){
+    return this.stack.length;
+  }
 
   isEmpty() {
     return this.stack.length === 0;
@@ -28,6 +31,12 @@ class Stack {
 let stack = new Stack();
 stack.push(1);
 stack.push(-10);
+stack.push(5);
+stack.push(3);
+stack.push(8);
+console.log(stack.stack);
 console.log(stack.pop());
+console.log(stack.stack);
 console.log(stack.peek());
 console.log(stack.isEmpty());
+console.log(stack.length());
