@@ -48,6 +48,6 @@ function quickSort(arr){
   };
   }
 
-  return [...quickSort(left), pivot ,...quickSort(right)];
+  return [...quickSort(left), pivot, ...quickSort(right)];
 }
 console.log(quickSort([10, 7, 8, 9, 1, 4, 5, 2, 6, 3]));
